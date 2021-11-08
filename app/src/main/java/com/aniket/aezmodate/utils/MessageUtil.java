@@ -71,7 +71,7 @@ public class MessageUtil {
             messageBean.setBackground(MessageUtil.COLOR_ARRAY[RANDOM.nextInt(MessageUtil.COLOR_ARRAY.length)]);
             List<MessageBean> messageBeanList = new ArrayList<>();
             messageBeanList.add(messageBean);
-            messageListBeanList.add(new MessageListBean(account, messageBeanList));
+            messageListBeanList.add(new MessageListBean(INTENT_EXTRA_TARGET_NAME, messageBeanList));
 
         } else {
             // account exist get messagelistbean

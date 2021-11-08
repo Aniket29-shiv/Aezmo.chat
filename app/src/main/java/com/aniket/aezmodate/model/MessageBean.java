@@ -32,7 +32,7 @@ public class MessageBean implements Serializable {
 
     private String cacheFile;
     private int background;
-    private RtmClient mRtmClient;
+//    private RtmClient mRtmClient;
 
 
 //    private String chatTime;
@@ -43,9 +43,7 @@ public class MessageBean implements Serializable {
         this.peerId = peerId;
     }
 
-    public MessageBean() {
 
-    }
 
 
     public int getId() {
@@ -83,11 +81,7 @@ public class MessageBean implements Serializable {
         return message;
     }
 
-    public void setMessage(String message) {
-        RtmMessage sMessage = mRtmClient.createMessage();
-        sMessage.setText(message);
-        this.message = message;
-    }
+    public void setMessage(String message) { this.message = message; }
 
     public String getCacheFile() {
         return cacheFile;

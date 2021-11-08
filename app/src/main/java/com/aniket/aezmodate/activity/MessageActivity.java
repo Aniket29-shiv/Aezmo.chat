@@ -437,7 +437,7 @@ public class MessageActivity extends Activity {
             protected Void doInBackground(Void... voids) {
 
                 //creating a message
-                MessageBean msg = new MessageBean();
+                MessageBean msg = new MessageBean(userId, peerId, chatmsg.getText());
                 msg.setUserId(userId);
                 msg.setPeerId(peerId);
                 msg.setMessage(chatmsg.getText());
